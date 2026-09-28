@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JMS Fresh Flowers | Fresh Flowers, Traditional Maalai & Bouquets</title>
+  <meta name="description" content="Order 100% fresh flowers, traditional wedding & temple maalai (garlands), and stunning bouquets (poche's) from JMS Fresh Flowers. Direct WhatsApp ordering & quick delivery.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Quick Info Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span><i class="fa-solid fa-leaf"></i> 100% Fresh Daily Farm Flowers</span>
+        <span class="desktop-only"><i class="fa-regular fa-clock"></i> Open: 5:00 AM - 10:00 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:6374651456" class="top-link"><i class="fa-solid fa-phone"></i> +91 6374651456</a>
+        <a href="https://wa.me/916374651456" target="_blank" class="top-link wa-link"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo">
+        <!-- ============================================================== -->
+        <!-- 🟢 LOGO ICON / IMAGE -->
+        <!-- ============================================================== -->
+        <div class="logo-icon-box">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">JMS Fresh Flowers</span>
+          <span class="logo-subtitle">மலர்கள் & மாலைகள் • Freshness Guaranteed</span>
+        </div>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="header-search">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Search Malli, Rose, Maalai, Bouquets...">
+        <button id="clearSearchBtn" class="clear-search-btn" title="Clear search"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <!-- Navigation Actions -->
+      <div class="header-actions">
+        <a href="tel:6374651456" class="btn btn-outline btn-call desktop-only">
+          <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+        <button id="cartToggleBtn" class="cart-btn" aria-label="View Shopping Cart">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="cart-label desktop-only">Cart</span>
+          <span id="cartCountBadge" class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fa-solid fa-certificate"></i> Premium Floral Craftsmanship
+        </div>
+        <h1 class="hero-title">
+          Fragrant Fresh Flowers, Grand <span>Maalai</span> & Handcrafted <span>Poche's</span>
+        </h1>
+        <p class="hero-description">
+          Welcome to <strong>JMS Fresh Flowers</strong>. Order fresh daily pooja flowers, custom wedding & temple garlands, and stunning flower bouquets delivered with love. Instant order placement via WhatsApp!
+        </p>
+
+        <div class="hero-features-list">
+          <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Direct Farm Fresh</div>
+          <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Custom Wedding Maalai</div>
+          <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Fast WhatsApp Ordering</div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#catalog" class="btn btn-primary btn-large">
+            <i class="fa-solid fa-flower-tulip"></i> Explore Flowers
+          </a>
+          <a href="https://wa.me/916374651456?text=Hi%20JMS%20Fresh%20Flowers,%20I%20would%20like%20to%20enquire%20about%20flowers" target="_blank" class="btn btn-whatsapp btn-large">
+            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="hero-image-card">
+          <!-- ============================================================== -->
+          <!-- 🟢 👉👉👉 [EDIT HERO BANNER IMAGE HERE] 👈👈👈 -->
+          <!-- If you have a shop front or main flower photo, save it as       -->
+          <!-- 'images/hero-banner.jpg' and replace the src below.            -->
+          <!-- ============================================================== -->
+          <img src="./images/ChatGPT Image Sep 26, 2026, 03_20_40 PM.png" alt="JMS Fresh Flowers" class="hero-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80';">
+          <div class="hero-floating-badge">
+            <i class="fa-solid fa-heart"></i>
+            <div>
+              <strong>Order in 1 Click</strong>
+              <small>Delivered Fresh on Time</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Category Cards -->
+  <section class="quick-category-section">
+    <div class="container">
+      <div class="category-cards-grid">
+        <div class="cat-quick-card" onclick="filterByCategory('flowers')">
+          <div class="cat-icon-circle flowers-bg">🌸</div>
+          <div class="cat-details">
+            <h3>Fresh Flowers</h3>
+            <p>Malli, Rose, Sevvanthi & Daily Flowers</p>
+          </div>
+          <i class="fa-solid fa-arrow-right cat-arrow"></i>
+        </div>
+
+        <div class="cat-quick-card" onclick="filterByCategory('maalai')">
+          <div class="cat-icon-circle maalai-bg">📿</div>
+          <div class="cat-details">
+            <h3>Traditional Maalai</h3>
+            <p>Wedding Garlands, Temple & Deity Garlands</p>
+          </div>
+          <i class="fa-solid fa-arrow-right cat-arrow"></i>
+        </div>
+
+        <div class="cat-quick-card" onclick="filterByCategory('bouquets')">
+          <div class="cat-icon-circle bouquet-bg">💐</div>
+          <div class="cat-details">
+            <h3>Bouquets & Poche's</h3>
+            <p>Roses, Gift Posies & Event Bouquets</p>
+          </div>
+          <i class="fa-solid fa-arrow-right cat-arrow"></i>
+        </div>
+
+        <div class="cat-quick-card" onclick="filterByCategory('pooja')">
+          <div class="cat-icon-circle pooja-bg">🪔</div>
+          <div class="cat-details">
+            <h3>Pooja Specials</h3>
+            <p>Friday Thali Sets & Daily Flower Packs</p>
+          </div>
+          <i class="fa-solid fa-arrow-right cat-arrow"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Catalog Section -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-badge">Handpicked With Care</span>
+        <h2 class="section-title">Our Fresh Collection</h2>
+        <p class="section-subtitle">
+          Select items to add to cart or click "Quick Order" to message us on WhatsApp instantly!
+        </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-tabs-wrapper">
+          <div class="filter-tabs" id="categoryTabs">
+            <!-- Populated dynamically via products.js -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Populated dynamically via products.js -->
+      </div>
+
+      <!-- Empty Search State -->
+      <div id="noProductsFound" class="empty-state hidden">
+        <i class="fa-regular fa-face-frown"></i>
+        <h3>No matching flowers found</h3>
+        <p>Try searching with another keyword or browse all categories.</p>
+        <button class="btn btn-outline" onclick="resetFilters()">View All Products</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Maalai / Bulk Order Banner -->
+  <section class="custom-order-section">
+    <div class="container">
+      <div class="custom-card">
+        <div class="custom-card-text">
+          <span class="custom-pill">Special Occasion Orders</span>
+          <h2>Planning a Wedding, Function, or Temple Festival?</h2>
+          <p>
+            We take custom orders for <strong>Bride & Groom Kalyana Maalai</strong>, stage floral decoration, VIP felicitation garlands, and bulk orders for events. Send us your requirements on WhatsApp for instant pricing & designs!
+          </p>
+          <div class="custom-card-actions">
+            <a href="https://wa.me/916374651456?text=Hello%20JMS%20Fresh%20Flowers,%20I%20want%20to%20order%20custom%20garlands/bulk%20flowers%20for%20a%20function." target="_blank" class="btn btn-whatsapp btn-large">
+              <i class="fa-brands fa-whatsapp"></i> Chat with Us for Custom Orders
+            </a>
+            <a href="tel:6374651456" class="btn btn-white btn-large">
+              <i class="fa-solid fa-phone"></i> Call +91 6374651456
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-badge">Simple 3-Step Process</span>
+        <h2 class="section-title">How To Order from JMS Fresh Flowers</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+          <h3>Select Flowers</h3>
+          <p>Choose your favorite flowers, traditional maalai, or bouquets and set quantity.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3>Send to WhatsApp</h3>
+          <p>Click "Order via WhatsApp". Your complete order list and address will be auto-formatted.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3>Fresh Delivery / Pickup</h3>
+          <p>We confirm your order immediately and deliver fresh, fragrant flowers right on time!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-icon-box">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">JMS Fresh Flowers</span>
+            <span class="logo-subtitle">Pure Freshness & Tradition</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Your trusted local flower destination for daily fresh flowers, bridal wedding garlands, pooja essentials, and designer bouquets.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Specialties</h4>
+        <ul class="footer-links">
+          <li><a href="#catalog" onclick="filterByCategory('flowers')">Madurai Gundu Malli</a></li>
+          <li><a href="#catalog" onclick="filterByCategory('maalai')">Kalyana Maalai Sets</a></li>
+          <li><a href="#catalog" onclick="filterByCategory('bouquets')">Red Rose Hand Bouquets</a></li>
+          <li><a href="#catalog" onclick="filterByCategory('maalai')">Temple Pooja Garlands</a></li>
+          <li><a href="#catalog" onclick="filterByCategory('pooja')">Friday Pooja Special Thali</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact & Shop Hours</h4>
+        <ul class="footer-contact-list">
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:6374651456">+91 6374651456</a></li>
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/916374651456" target="_blank">+91 6374651456</a></li>
+          <li><i class="fa-solid fa-clock"></i> Mon - Sun: 5:00 AM - 10:00 PM</li>
+          <li><i class="fa-solid fa-truck"></i> Home Delivery & Store Pickup Available</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>© 2026 <strong>JMS Fresh Flowers</strong>. All rights reserved.</p>
+        <p class="tagline">Crafted with fresh passion 🌸</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Drawer / Modal -->
+  <div id="cartModal" class="cart-modal-backdrop">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <div class="cart-title-box">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <h3>Your Flower Basket</h3>
+          <span id="drawerBadge" class="drawer-count">0 items</span>
+        </div>
+        <button id="closeCartBtn" class="close-cart-btn" aria-label="Close cart">&times;</button>
+      </div>
+
+      <!-- Cart Items Container -->
+      <div class="cart-drawer-body">
+        <div id="emptyCartView" class="empty-cart-message">
+          <i class="fa-solid fa-basket-shopping empty-icon"></i>
+          <p>Your basket is currently empty</p>
+          <button class="btn btn-outline btn-sm" onclick="closeCart();">Start Shopping</button>
+        </div>
+
+        <div id="cartItemsList" class="cart-items-list">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Customer Checkout Info Form -->
+        <div id="checkoutFormSection" class="checkout-form-section hidden">
+          <h4 class="form-title"><i class="fa-solid fa-user"></i> Your Delivery Details</h4>
+          
+          <div class="form-group">
+            <label for="custName">Your Name <span class="required">*</span></label>
+            <input type="text" id="custName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="custPhone">Your Phone Number</label>
+            <input type="tel" id="custPhone" placeholder="Enter mobile number">
+          </div>
+
+          <div class="form-group">
+            <label for="custAddress">Delivery Address / Area <span class="required">*</span></label>
+            <textarea id="custAddress" rows="2" placeholder="Street, landmark, locality..." required></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="custDate">Date Required</label>
+              <input type="date" id="custDate">
+            </div>
+            <div class="form-group">
+              <label for="custTime">Time Slot</label>
+              <select id="custTime">
+                <option value="Early Morning (6 AM - 8 AM)">Early Morning (6 AM - 8 AM)</option>
+                <option value="Morning (8 AM - 11 AM)">Morning (8 AM - 11 AM)</option>
+                <option value="Afternoon (12 PM - 3 PM)">Afternoon (12 PM - 3 PM)</option>
+                <option value="Evening (4 PM - 8 PM)">Evening (4 PM - 8 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="custNotes">Special Instructions (Optional)</label>
+            <input type="text" id="custNotes" placeholder="e.g. Extra tight knot, specific color...">
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Drawer Footer -->
+      <div class="cart-drawer-footer" id="cartFooter">
+        <div class="cart-summary">
+          <div class="summary-line">
+            <span>Subtotal:</span>
+            <span id="cartSubtotal" class="summary-amount">₹0</span>
+          </div>
+          <div class="summary-line total-line">
+            <span>Estimated Total:</span>
+            <span id="cartTotal" class="total-amount">₹0</span>
+          </div>
+          <small class="delivery-hint">*Final delivery charge (if applicable) confirmed on WhatsApp</small>
+        </div>
+
+        <button id="sendWhatsappBtn" class="btn btn-whatsapp btn-full btn-large">
+          <i class="fa-brands fa-whatsapp"></i> Send Order on WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/916374651456?text=Hello%20JMS%20Fresh%20Flowers,%20I%20have%20an%20enquiry%20about%20flowers" target="_blank" class="floating-wa-btn" title="Chat with JMS Fresh Flowers on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="floating-tooltip">Chat with us!</span>
+  </a>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <!-- 1. Product Catalog Data (Prices & Images easily edited here) -->
+  <script src="products.js"></script>
+  <!-- 2. Application Logic & WhatsApp Order Builder -->
+  <script src="app.js"></script>
+</body>
+</html>
